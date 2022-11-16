@@ -202,9 +202,27 @@
     
         &__img8{
          position: absolute;
-         top: 11rem;
-         right: 29rem;
+         top: 19rem;
+         right: 4rem;
          z-index: 1;
+        }
+        .Home-section4{
+            &__img9,
+            &__img7,
+            &__img8{
+                height:150.89px;
+                width: 250.21px;
+            }
+            &__img9{
+                position: absolute;
+                left: 48rem;
+                top:8rem;
+            }
+            &__img7{
+                 position: absolute;
+                 top: 15rem;
+                 right: 20rem;
+            }
         }
        
     }

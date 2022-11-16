@@ -18,10 +18,10 @@
         display: flex;
        justify-content: center;
        align-items: center;
-       margin-left: 15rem;
+       margin-left: 10rem;
      
         &_link{
-             width:8rem;
+            width:7rem;
             height: 1.25rem;
             text-decoration: none;
             color: $textcolor;
@@ -29,7 +29,6 @@
             font-family: $Main-font;
             font-weight: 400;
            
-
             &:hover{
                 padding-bottom: 8px;
                 border-bottom: 2px solid $Main-color;
@@ -38,7 +37,7 @@
     }
 }
  .Button-component{
-        margin-left: 10rem;
+        margin-left: 6rem;
     }
 // POP UP STYLING 
 .popUp-section{
@@ -164,11 +163,11 @@
             align-items: center;
         }
         &--Nav{
-            margin-left:10rem;
+            margin-left:7rem;
            
  
             &_link{
-             width:7rem;
+             width:4rem;
             
             }
          
