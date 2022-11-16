@@ -2,6 +2,8 @@ import { Link} from "react-router-dom";
 import { useState } from "react";
 import Button from "../Button.componet";
 import popUpImg1 from "../../Image-containner/image 66.png";
+import popUpImg2 from "../../Image-containner/image 69.png";
+import {GrFormNext} from "react-icons/gr";
 
 const NavLink=()=>{
     const [OpenCommunity, setOpenCommunity]=useState(false);
@@ -49,35 +51,23 @@ const NavLink=()=>{
         </div>
 
         <div className="popUp-section--option">
-            <label className="popUp-section--dropdown" htmlFor="connectWallet">
-                Choose your preferred wallet:
-            </label><br/>
-            
-            <div name="wallet" id="connectWallet" className="popUp-section--connectWallet">
-            
-                <option value='MetaMask'>
-                <img className="popUp--img" src={popUpImg1}/>
-                    Meta Mask
-                </option>
-                <option value='MetaMask'>
-                  Meta Mask 2
-                </option>
-                <option value='MetaMask'>
-                 Meta Mask 2
-                </option>
-            </div>
-            <select name="wallet" id="connectWallet" className="popUp-section--connectWallet">
-             <option value='MetaMask'>
-             {/* <img className="popUp--img" src={popUpImg1}/> */}
-             WalletConnect
-            </option>
-            <option value='MetaMask'>
-             WalletConnect  2
-            </option>
-            <option value='MetaMask'>
-             WalletConnect 2
-            </option>
-            </select>
+        <label className="popUp-section--dropdown" htmlFor="connectWallet">
+                  Choose your preferred wallet:
+              </label><br/>
+                    <div className="popUp-section--connectWallet">
+                        <div className="popUp-section--selection">
+                            <img src={popUpImg1} alt="popUp-image" className="popUp-section--img" />
+                            Meta Mask
+                        </div>
+                        <GrFormNext className="popUp-section--icon"/>
+                  </div>
+                  <div className="popUp-section--connectWallet">
+                      <div className="popUp-section--selection">
+                        <img src={popUpImg2} alt="popUp-image" className="popUp-section--img"/>
+                            WalletConnect
+                      </div>
+                        <GrFormNext className="popUp-section--icon" />
+                  </div>
         </div>
     </div>
        : ''

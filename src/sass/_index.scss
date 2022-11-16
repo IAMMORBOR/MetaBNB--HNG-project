@@ -25,6 +25,7 @@ $font-secondary:"Poppins","Roboto" sans-sarif;
 }
 
 
+
 body {
   margin: 0;
   font-family: "Red Rose", "Poppins", "Roboto", Sans-sarif;
@@ -34,6 +35,7 @@ body {
   //   sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 
 }
 html {
@@ -54,4 +56,25 @@ html {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+// MEDIA QUERY SECTION
+@media (max-width:900px){
+
+
+}
+@media (max-width:600px){
+  body{
+    // font-size: 40%;
+  overflow-x: hidden;
+  }
+
+}
+@media (max-width:390px){
+  body{
+    // font-size: 35%;
+  overflow-x: hidden;
+  width: 100%;
+  
+  }
+
 }

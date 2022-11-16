@@ -25,15 +25,19 @@
     }
     
 }
-// @media (max-width:37.5em){
-//     .Place-section{
-//     &__ul{
-//         animation: scroll 5s linear infinite;
+@media (max-width:37.5em){
+    .Place-section{
+    &__ul{
+        animation: scroll 5s linear infinite;
 
-//     }
-// }
+    }
+    &__li{
+        margin-right: 10px;
+        width: 8rem;
+    }
+}
 
-// }
+}
 @keyframes scroll{
     0%{
         transform: translateX(20%);
