@@ -1,0 +1,45 @@
+
+.Place-section{
+    padding: 4rem 5rem 4.6rem 5rem;
+
+    &__nav{
+        margin-bottom: 75px;
+    }
+
+    &--link{
+        text-decoration: none;
+        color:$textcolor;
+    }
+    &__ul{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1rem;
+        font-weight: 400;
+        font-family: $Main-font;
+    }
+    &--icon{
+        // margin-left: 15px;
+        font-size: 1.3rem;
+    }
+    
+}
+// @media (max-width:37.5em){
+//     .Place-section{
+//     &__ul{
+//         animation: scroll 5s linear infinite;
+
+//     }
+// }
+
+// }
+@keyframes scroll{
+    0%{
+        transform: translateX(20%);
+    }
+    100%{
+        transform: translateX(-100%);
+
+    }
+}

@@ -1,0 +1,242 @@
+.Home-section{
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+    margin:4rem 0 3.4rem 0;  
+    font-family: $Main-font;
+    padding: 0rem 5rem 0 5rem;
+
+    &--banner{
+        width: 32.3rem;
+        margin-right: 5rem; 
+    }
+    &--heroText{
+        width: 40rem;
+        font-size: 2.8rem;
+        font-weight: 700;
+        font-family: inherit;
+        color: $textcolor;
+        margin-bottom: 2.4rem;
+        
+
+        &__span{
+            color:$Main-color
+        }
+       
+    }
+    &--SubText{
+        color:$textcolor;
+        font-family: inherit;
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height:1.75rem;
+        margin-bottom: 2.4rem;
+    }
+    &--input{
+        width: 19.5rem;
+        height: 2.4rem;
+       border: 2px solid $color-grey;
+       outline: none;
+
+       &:hover{
+        border: 2px solid $Main-color;
+       }
+       &::placeholder{
+        color: $color-grey-2;
+        padding-left: 0.75rem;
+        font-size: 0.8rem;
+        font-family: inherit;
+        font-weight: 400;
+
+       }
+    }
+    &--main2{
+        display: flex;
+        margin-left: 7rem;
+
+        &__class1{
+          margin-top: 7rem;
+        }
+        &__img{
+            margin-bottom: 8px;
+        }
+    }
+    &--main2__mobile{
+        display: none;
+    }
+}
+.Home-section2{
+    &--frame{
+        width:100%;
+        padding: 0;
+    }
+}
+.Home-section3{
+    padding: 1.95rem 5rem 2.7rem 5rem;
+
+    &__text{
+        font-size: 2.4rem;
+        color: $color-black;
+        text-align: center;
+        font-weight: 700;
+        font-family: $Main-font;
+        margin-bottom: 2.2rem;
+    }
+}
+.Home-section4{
+    background-color: $Main-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 5rem 5rem 10rem 5rem;
+    // height: 20rem;
+   
+    &--textArea{
+        color: $color-white;
+        font-family: $Main-font;
+        margin-top: 9rem;
+    }
+    &--heading{
+        font-size: 2.4rem;
+        font-weight: 700;
+        line-height: 2.8rem;
+        margin-bottom: 1.75rem;
+    }
+    &--text{
+        font-size: 0.9rem;
+        font-weight: 400;
+        width: 21rem;
+        line-height: 2rem;
+        margin-bottom: 2.9rem;
+    }
+    &__img9,
+    &__img7,
+    &__img8{
+        height:253.89px;
+        width: 378.21px;
+    }
+    &__img9{
+        position: absolute;
+        left: 52rem;
+        top:6rem;
+
+    }
+    &__img8{
+     position: absolute;
+     top: 17rem;
+     right: 9rem;
+     z-index: 1;
+     
+    }
+    &__img7{
+         position: absolute;
+         top: 12rem;
+         right: 22rem;
+    }
+}
+//MEDIA QUERY
+@media (max-width:56.25em){
+    .Home-section{
+        padding: 0rem 3rem 0 3rem;
+        width: 90vw;
+        &--banner{
+            width: 30rem;
+        }
+        &--main2{
+            margin-left: 0rem;
+
+            &__class1{
+              margin-top: 7rem;
+              margin-left: 1rem;
+            }
+            &__class2{
+                margin-top: 4rem;
+                margin-right: 6rem;
+              }
+            &__img{
+                margin-bottom: 8px;
+                width: 180px;
+            }
+        }
+        &--imageContainer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+   
+    .Home-section4{
+        &__img9,
+        &__img7,
+        &__img8{
+            height:150.89px;
+            width: 250.21px;
+        }
+        &__img9{
+            position: absolute;
+            left: 58rem;
+            top:4rem;
+        }
+        &__img8{
+         position: absolute;
+         top: 15rem;
+         right: 5rem;
+         z-index: 1;
+        }
+        &__img7{
+             position: absolute;
+             top: 12rem;
+             right: 22rem;
+        }
+    }
+}
+@media (max-width:37.5em){
+    .Home-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &--banner{
+            width: 100%;
+            text-align: center;
+        }
+        &--heroText{
+            width: 80%;
+            margin: auto;
+        }
+        &--main2{
+            display: none;
+        }
+        &--main2__mobile{
+            margin-top: 1.8rem;
+            display: flex;
+            overflow:hidden;
+            animation: scroll 5s linear infinite;
+        }
+    }
+    .Home-section4{
+        display:block;
+        &--imgArea{
+            display: none;
+        }
+        &--text{
+            margin: auto ;
+            margin-bottom:1.3rem;
+        }
+        &--textArea{
+            margin-top: 3rem;
+           text-align: center;
+        }
+    }
+}
+@keyframes scroll{
+    0%{
+        transform: translateX(20%);
+    }
+    100%{
+        transform: translateX(-100%);
+
+    }
+}

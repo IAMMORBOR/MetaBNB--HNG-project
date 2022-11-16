@@ -1,0 +1,50 @@
+.btn{
+    font-size: 0.8rem;
+    font-family: $Main-font;
+    height: 1.5rem;
+    width: 8.5rem;
+    border: none;
+    padding: .1rem;
+    letter-spacing: 0.2px;
+    color: $color-white;
+    cursor: pointer;
+
+    &--main{
+        background-color: $Main-color;
+        height: 2.4rem;
+        width: 8.5rem;
+        border-radius: 10px;
+    }
+    &--search{
+        height: 2.7rem;
+        background-color: $Main-color;
+        width: 8.5rem;
+        border-radius:0 5px 5px 0;
+    }
+    &--btnPrimary{
+         color:$Main-color;
+         height:2.4rem;
+         width: 7.8rem;
+         border-radius: 8px;
+    }
+    &--btnLocation{
+        color: $textcolor;
+        display: flex;
+        align-items: center;
+        justify-content:space-around;
+        background-color: $color-white;
+        border: 1px solid $color-tertiary-1;
+        width: 120px;
+        height: 37px;
+        border-radius: 8px;
+    }
+}
+//MEDIA QUERY
+@media (max-width:56.25em){
+    .btn{
+        &--search{
+            height: 2.9rem;
+            // margin-top: -5px;
+        }
+    }
+}
